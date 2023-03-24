@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<title>Blazeface demo</title>
+    <!-- Import the webpage's stylesheet -->
+</head>
+
+<body>
+  <section id="cameraSection">
+  <h1>Blazeface demo</h1> 
+  <h2 id='status'>loading model...</h2> 
+      <div>
+        <button id="enableWebcamButton" disabled>Open the camera</button>
+        <button id="disableWebcamButton" disabled>Close the camera</button>
+      </div>
+      <div id="liveView">  
+        <video id="webcam" autoplay width="640" height="480"></video>
+      </div>
+	  
+      <canvas id="outputCanvas" width="640" height="480" ></canvas>
+    
+
+  </section>
+ 
+    <!-- Import TensorFlow.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+    <script async src="opencv.js"  ></script>
+    <!-- Import the page's JavaScript to do some stuff -->
+    <script src="blazeface.js" defer></script>
+</body>
+
+</html>
